@@ -1,0 +1,63 @@
+.encuesta-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid rgba(9, 190, 9, 0.3);
+    box-shadow: 0 0 100px 20px rgba(50, 255, 94, 0.5);
+}
+
+h2 { color: rgb(1, 151, 1); text-align: center; }
+
+.pregunta {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.pregunta p { font-weight: bold; margin-bottom: 10px; }
+
+label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label:hover { color: rgb(1, 151, 1); }
+
+#btn-enviar {
+    background-color: rgb(1, 151, 1);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 0 20px 5px rgba(50, 255, 94, 0.2); /* Brillo similar al de tu botón */
+}
+
+#btn-enviar:hover {
+    background-color: rgb(2, 226, 2);
+    transform: scale(1.02);
+}
+
+.hidden { display: none; }
+
+#resultado {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 0.5s;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(2, 95, 2);
+    color: white;
+    border: none;
+    cursor: pointer;
+}

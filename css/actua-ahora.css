@@ -1,0 +1,88 @@
+.modal-eco {
+    display: none; /* Se oculta al cargar */
+    position: fixed;
+    z-index: 10000; /* Número muy alto para estar por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+/* Caja de contenido */
+.modal-contenido {
+    background: #0a0a0a;
+    margin: 5% auto;
+    padding: 30px;
+    border: 2px solid #00ff00;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 25px;
+    position: relative;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+.cerrar-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #666;
+}
+
+.cerrar-modal:hover { color: white; }
+
+/* Tarjeta Bancaria Visual */
+.tarjeta-visual {
+    background: linear-gradient(135deg, #013220 0%, #000 100%);
+    height: 180px;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    position: relative;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    text-align: left;
+}
+
+.chip {
+    width: 45px;
+    height: 35px;
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.numero-tarjeta { font-size: 22px; letter-spacing: 3px; margin-bottom: 15px; font-family: 'Courier New', monospace; }
+.nombre-tarjeta { font-size: 14px; text-transform: uppercase; opacity: 0.8; }
+.logo-eco-card { position: absolute; bottom: 20px; right: 20px; font-weight: bold; font-size: 20px; }
+
+/* Botones de Pago */
+.contenedor-opciones { display: flex; flex-direction: column; gap: 12px; }
+
+.btn-opcion-pago {
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-opcion-pago:hover {
+    border-color: #00ff00;
+    background: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+.nota-seguridad { font-size: 11px; color: #555; margin-top: 20px; }

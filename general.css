@@ -1,0 +1,40 @@
+body{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.Menu{
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+}
+
+span{
+    color: rgb(2, 172, 25);
+}
+
+.barra{
+    display:flex;
+    align-items: center;
+
+    .Menu{
+        position: absolute;
+        right: 500px;
+        align-items: center;
+        justify-content: space-between;
+        a{text-decoration: none; color: white;}
+        display: flex; 
+        gap: 50px;
+        list-style: none;
+    }
+        #Contactanos{
+            margin-left: 900px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(1, 151, 1);
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 0 20px 5px rgba(50, 255, 94, 0.5);
+        }
+}

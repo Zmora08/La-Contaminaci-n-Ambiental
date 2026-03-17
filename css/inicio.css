@@ -1,0 +1,186 @@
+
+/*Pagina.................................................................................*/
+#video-fondo {
+    border-radius: 20px;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    z-index: -1;
+    box-shadow: 0 0 60px 10px rgba(50, 255, 111, 0.5);
+}
+
+ .Tema{
+    display: flex;
+    font-size: 40px;
+    padding: 80px 50px;
+ }
+ 
+
+.bloques{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    a{color: white; text-decoration: none;}
+    .bloque-uno-s{
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(2, 59, 5); 
+        box-shadow: 0 0 20px 1px rgba(119, 216, 148, 0.5);
+
+            .bloque-uno{              
+            padding: 20px;
+            width: 230px;
+            border-radius: 20px;
+            background-color: rgb(48, 99, 53);  
+    }
+    }
+
+
+}
+/*    background: 
+        radial-gradient(circle at 0% 0%, rgba(1, 151, 1, 0.5) 0%, transparent 40%),
+        #000; 
+    
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;*/
+
+    /*nuevo apartado.......................................................................................*/
+
+.importancia-seccion {
+    padding: 80px 5%;
+    background: linear-gradient(180deg, #051a05 0%, #000000 100%);
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden; /* Importante para que las animaciones no desborden */
+}
+
+.importancia-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.importancia-contenido h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.importancia-contenido h1 span {
+    color: rgb(2, 226, 2);
+    text-shadow: 0 0 15px rgba(2, 226, 2, 0.5);
+}
+
+.importancia-contenido p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.cita {
+    font-style: italic;
+    color: #888;
+    margin-top: 50px;
+    font-size: 0.95rem;
+}
+
+.btn-aprende {
+    display: inline-block;
+    padding: 15px 35px;
+    background: rgb(1, 151, 1);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    box-shadow: 0 0 25px rgba(50, 255, 94, 0.4);
+    transition: 0.3s;
+}
+
+.btn-aprende:hover {
+    background: rgb(2, 200, 2);
+    transform: translateY(-5px);
+}
+
+/* Contenedor de Animaciones */
+.animacion-contenedor {
+    position: relative;
+    height: 150px; /* Espacio para las animaciones */
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.elemento-animado {
+    font-size: 60px;
+    position: absolute;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    opacity: 0.8;
+}
+
+/* Animaciones específicas */
+.agua {
+    left: 10%;
+    animation-name: flotarAgua;
+}
+
+.arbol {
+    left: 35%;
+    animation-name: crecerArbol;
+}
+
+.aire {
+    right: 35%;
+    animation-name: soplarAire;
+}
+
+.sol {
+    right: 10%;
+    animation-name: brillarSol;
+}
+
+/* Keyframes (definición de las animaciones) */
+@keyframes flotarAgua {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes crecerArbol {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes soplarAire {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+}
+
+@keyframes brillarSol {
+    0%, 100% { text-shadow: 0 0 10px yellow, 0 0 20px orange; }
+    50% { text-shadow: 0 0 20px yellow, 0 0 40px orange; }
+}   
+/*informaciones........................................................................................................*/
+
+.informacion{
+    display: flexbox;
+    background-color: rgb(1, 37, 1);
+    padding: 20px;
+    box-shadow: 0 0 50px 5px rgb(70, 196, 107);
+    .iinformacion{
+        display: flex;
+        gap: 50px;
+        .iiinformacion{
+            display: flex;
+            a{text-decoration: none;}
+        }
+    }
+}

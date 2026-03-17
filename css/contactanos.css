@@ -1,0 +1,81 @@
+body{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.Menu{
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+}
+
+span{
+    color: rgb(2, 172, 25);
+}
+/*Pagina.................................................................................*/
+
+.reporte-contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.reporte-caja {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(1, 151, 1, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.reporte-caja h2 span {
+    color: rgb(1, 151, 1);
+}
+
+.campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.campo input, .campo select, .campo textarea {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus, .campo textarea:focus {
+    border-color: rgb(1, 151, 1);
+}
+
+.btn-reportar {
+    width: 100%;
+    padding: 15px;
+    background: rgb(1, 151, 1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-reportar:hover {
+    background: rgb(2, 190, 2);
+    box-shadow: 0 0 15px rgba(1, 151, 1, 0.4);
+    transform: scale(1.02);
+}

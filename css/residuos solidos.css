@@ -1,0 +1,106 @@
+.residuos-seccion {
+            padding: 80px 5%;
+            background-color: #000;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .residuos-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .residuos-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .residuos-header span {
+            color: rgb(2, 226, 2);
+        }
+
+        .residuos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 70px;
+        }
+
+        .residuos-tarjeta {
+            background: rgba(1, 151, 1, 0.05);
+            padding: 45px 30px;
+            border-radius: 25px;
+            border: 1px solid rgba(1, 151, 1, 0.15);
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px 2px rgba(50, 255, 94, 0.5);            
+        }
+
+        .residuos-tarjeta:hover {
+            background: rgba(1, 151, 1, 0.1);
+            border-color: rgb(2, 226, 2);
+            transform: scale(1.03);
+        }
+
+        .residuos-icono {
+            font-size: 55px;
+            margin-bottom: 25px;
+        }
+
+        .residuos-tarjeta h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: rgb(2, 226, 2);
+        }
+
+        .residuos-tarjeta a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #888;
+            font-size: 0.85rem;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .residuos-tarjeta a:hover {
+            color: white;
+            border-bottom: 1px dotted white;
+        }
+
+        /* Bloque de Acción */
+        .residuos-accion {
+            background: linear-gradient(135deg, #051a05 0%, #000000 100%);
+            padding: 60px;
+            border-radius: 30px;
+            border: 1px solid #1a3a1a;
+            text-align: center;
+            box-shadow: 0 0 20px 5px rgba(50, 255, 94, 0.5);
+        }
+
+        .botones-flex {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn-residuos {
+            padding: 15px 35px;
+            background: rgb(1, 151, 1);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-residuos.opaco {
+            background: transparent;
+            border: 2px solid rgb(1, 151, 1);
+        }
+
+        .btn-residuos:hover {
+            box-shadow: 0 0 25px rgba(2, 226, 2, 0.4);
+            transform: translateY(-3px);
+        }
