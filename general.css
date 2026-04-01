@@ -1,40 +1,76 @@
-body{
+body {
     color: white;
     background-color: rgb(0, 0, 0);
-}
-.Menu{
-    a{
-        text-decoration: none;
-        color: aliceblue;
-    }
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-span{
+span {
     color: rgb(2, 172, 25);
 }
 
-.barra{
-    display:flex;
+/* La Barra: Ahora es un contenedor elástico */
+.barra {
+    display: flex;
     align-items: center;
+    justify-content: space-between; /* LA CLAVE: Reparte el espacio automáticamente */
+    padding: 15px 5%; /* El 5% hace que el margen crezca o achique con la pantalla */
+    background-color: rgba(0, 0, 0, 0.9);
+    position: sticky; /* Se queda arriba al bajar */
+    top: 0;
+    z-index: 1000;
+}
 
-    .Menu{
-        position: absolute;
-        right: 500px;
-        align-items: center;
-        justify-content: space-between;
-        a{text-decoration: none; color: white;}
-        display: flex; 
-        gap: 50px;
-        list-style: none;
+/* El Menú: Ya no tiene posiciones fijas */
+.barra .Menu {
+    display: flex;
+    list-style: none;
+    gap: 2vw; /* vw = viewport width. El espacio entre links se ajusta al ancho */
+    margin: 0;
+    padding: 0;
+}
+
+.barra .Menu a {
+    text-decoration: none; 
+    color: white;
+    font-size: 1.1rem; /* rem = tamaño relativo al texto base */
+    transition: 0.3s;
+}
+
+.barra .Menu a:hover {
+    color: rgb(2, 172, 25);
+}
+
+/* El Botón: Sin márgenes gigantes */
+#Contactanos {
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: rgb(1, 151, 1);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(50, 255, 94, 0.4);
+    white-space: nowrap; /* Evita que el texto se amontone */
+    transition: 0.3s;
+}
+
+#Contactanos:hover {
+    transform: scale(1.05);
+    background-color: rgb(2, 190, 2);
+}
+
+/* AJUSTE PARA PANTALLAS PEQUEÑAS (TABLETS Y CELULARES) */
+@media (max-width: 900px) {
+    .barra {
+        flex-direction: column; /* Cambia de horizontal a vertical */
+        gap: 20px;
+        padding: 20px;
     }
-        #Contactanos{
-            margin-left: 900px;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: rgb(1, 151, 1);
-            color: white;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 0 20px 5px rgba(50, 255, 94, 0.5);
-        }
+
+    .barra .Menu {
+        gap: 20px;
+        flex-wrap: wrap; /* Si no caben los links, saltan de línea */
+        justify-content: center;
+    }
 }
